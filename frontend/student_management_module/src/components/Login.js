@@ -14,8 +14,8 @@ const Login = () => {
     setError('');
 
     try {
-      // API call to Django
-      const res = await axios.post('http://127.0.0.1:8000/api/login/', credentials);
+      // API call to Django 
+      const res = await axios.post('https://sms-backend-rtbs.onrender.com/api/login/', credentials);
       localStorage.setItem('token', res.data.token);
       navigate('/dashboard');
     } catch (err) {
