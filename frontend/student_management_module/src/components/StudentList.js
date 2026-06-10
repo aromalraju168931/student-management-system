@@ -5,7 +5,7 @@ import API from '../api/axiosInstance';
 const StudentList = () => {
   const [students, setStudents] = useState([]);
   const [searchTerm, setSearchTerm] = useState("");
-  const BASE_URL = "http://127.0.0.1:8000"; 
+  const BASE_URL = "https://sms-backend-rtbs.onrender.com"; 
 
   useEffect(() => {
     API.get('students/').then(res => setStudents(res.data)).catch(err => console.log(err));
