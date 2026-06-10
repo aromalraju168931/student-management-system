@@ -60,7 +60,7 @@ const StudentList = () => {
                     <div style={{ display: 'flex', alignItems: 'center', gap: '15px' }}>
                       <img 
                         className="student-avatar" 
-                        src={s.image ? (s.image.startsWith('http') ? s.image : `${BASE_URL}${s.image}`) : 'https://via.placeholder.com/48/e6f0ff/0061ff?text=User'} 
+                        src={s.image ? (s.image.startsWith('http') ? s.image : `${BASE_URL}${s.image}`) : 'https://via.placeholder.com/48'} 
                         alt="profile" 
                       />
                       <div>
